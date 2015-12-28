@@ -41,8 +41,13 @@
             android:name="AA_MODELS"
             android:value="com.islandvibesguelph.islandvibes.Events,com.islandvibesguelph.islandvibes.User"/>
 
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait">
         </activity>
+
         <activity
             android:name=".SplashActivity"
             android:label="@string/title_activity_splash"
