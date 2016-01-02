@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto" >
+
+    <com.islandvibesguelph.islandvibes.widgets.SquareImageButton
+        android:id="@+id/btnLeftIcon"
+        style="@style/HeaderIconButtonLeft"
+        android:visibility="gone"
+        custom:matchDimension="height" >
+    </com.islandvibesguelph.islandvibes.widgets.SquareImageButton>
+
+    <TextView
+        android:id="@+id/lblTitle"
+        style="@style/HeaderTitle" >
+    </TextView>
+
+    <com.islandvibesguelph.islandvibes.widgets.SquareImageButton
+        android:id="@+id/btnRightIcon"
+        style="@style/HeaderIconButtonRight"
+        android:visibility="gone"
+        custom:matchDimension="height" >
+    </com.islandvibesguelph.islandvibes.widgets.SquareImageButton>
+
+</merge>

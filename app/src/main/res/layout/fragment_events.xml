@@ -1,10 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Upcoming Events"/>
+        android:background="@drawable/background_transparent_black_rounded"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="25dp"
+        android:paddingEnd="15dp"
+        android:paddingStart="15dp"
+        android:paddingTop="25dp">
 
-</LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upcoming Events"/>
+
+        <Button
+            android:id="@+id/btnToHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Click To Flip"/>
+
+    </LinearLayout>
+</RelativeLayout>

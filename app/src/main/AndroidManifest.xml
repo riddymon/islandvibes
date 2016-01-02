@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.islandvibesguelph.islandvibes"
     android:versionCode="1"
-    android:versionName="1.0" >
+    android:versionName="1.0">
 
     <uses-sdk
         android:minSdkVersion="19"
@@ -17,7 +17,6 @@
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
     <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
-
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -29,37 +28,35 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
         <meta-data
             android:name="AA_DB_NAME"
-            android:value="Dialin.db"/>
+            android:value="Dialin.db" />
         <meta-data
             android:name="AA_DB_VERSION"
-            android:value="1"/>
-
+            android:value="1" />
         <meta-data
             android:name="AA_MODELS"
-            android:value="com.islandvibesguelph.islandvibes.Events,com.islandvibesguelph.islandvibes.User"/>
-
-        <activity android:name=".MainActivity"
-            android:label="@string/title_activity_home"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:configChanges="keyboardHidden|orientation|screenSize"
-            android:screenOrientation="portrait">
-        </activity>
+            android:value="com.islandvibesguelph.islandvibes.Events,com.islandvibesguelph.islandvibes.User" />
 
         <activity
-            android:name=".SplashActivity"
-            android:label="@string/title_activity_splash"
-            android:theme="@style/AppTheme.NoActionBar"
+            android:name=".MainActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
-            android:screenOrientation="portrait">
+            android:label="@string/title_activity_home"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".SplashActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_splash"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".InfoActivity"></activity>
     </application>
 
 </manifest>

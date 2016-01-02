@@ -10,7 +10,11 @@ import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.islandvibesguelph.islandvibes.models.UserInfo;
 import com.islandvibesguelph.islandvibes.utilities.AppUtility;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class SplashActivity extends Activity {
     private TextView mLblVersion;
@@ -32,17 +36,40 @@ public class SplashActivity extends Activity {
         finish();
     }
 
+    private void goToUserInfo() {
+//        scheduleAlarm(System.currentTimeMillis() + Constants.REFRESH_DURATION);
+        Intent intent = new Intent(this, InfoActivity.class);
+        startActivity(intent);
+        finish();
+    }
+
     private void getStartupData() {
+        UserInfo redir = new UserInfo();
+        redir.setFirstName("dennis");
+        redir.setLastName("hall");
+        redir.setEmail("test@email.com");
+        redir.save();
 
         if (isFirstRun()) {
-
+            goToUserInfo();
         } else {
             goToHome();
         }
     }
 
+    //Determine if app should display user info screen
     private Boolean isFirstRun() {
-        return false;
+        boolean firstRun;
+        ArrayList<UserInfo> savedUsers = (ArrayList<UserInfo>)UserInfo.getUser();
+
+        if(savedUsers == null || savedUsers.isEmpty()){
+            firstRun = true;
+        }
+        else {
+            firstRun = false;
+        }
+//        UserInfo lastUser = aaTest.get(aaTest.size()-1);
+        return firstRun;
     }
 
     private void clearStatusBar() {
@@ -73,7 +100,8 @@ public class SplashActivity extends Activity {
                 /* Create an Intent that will start the Menu-Activity. */
                 getStartupData();
             }
-        }, 5000);
+        }, 2000);
+
 
     }
 

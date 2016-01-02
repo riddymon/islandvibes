@@ -7,7 +7,7 @@
     android:id="@+id/layoutHome"
     android:background="@color/ivneon"
     android:fitsSystemWindows="true"
-    tools:context="com.islandvibesguelph.islandvibes.MainActivity">
+    tools:context="com.islandvibesguelph.islandvibes.InfoActivity">
 
     <com.islandvibesguelph.islandvibes.widgets.Header
         android:id="@+id/homeHeader"
@@ -16,12 +16,10 @@
         custom:headerTitle="@string/unruly_app"
         custom:rightIcon="@drawable/icon_settings">
     </com.islandvibesguelph.islandvibes.widgets.Header>
-    <View
+    <TextView
         android:layout_below="@id/homeHeader"
-        android:layout_width="fill_parent"
-        android:layout_height="5dip"
-        android:background="@drawable/drop_shadow"
-        >
-    </View>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="info screen"/>
 
 </RelativeLayout>
