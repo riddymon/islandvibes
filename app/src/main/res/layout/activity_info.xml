@@ -16,10 +16,23 @@
         custom:headerTitle="@string/unruly_app"
         custom:rightIcon="@drawable/icon_settings">
     </com.islandvibesguelph.islandvibes.widgets.Header>
-    <TextView
-        android:layout_below="@id/homeHeader"
-        android:layout_width="wrap_content"
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="info screen"/>
+        android:layout_margin="20dp"
+        android:background="@drawable/background_transparent_black_rounded">
+        <TextView
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="INFO"
+            style="@style/ContentTitle"/>
+
+    </LinearLayout>
 
 </RelativeLayout>

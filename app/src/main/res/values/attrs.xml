@@ -13,4 +13,13 @@
         <attr name="rightIcon" format="integer" />
         <attr name="headerTitle" format="string" />
     </declare-styleable>
+    <declare-styleable name="Fields">
+        <attr name="label" format="string" />
+        <attr name="mainTitle" format="string" />
+        <attr name="subTitle" format="string" />
+        <attr name="label_weight" format="float" />
+        <attr name="value_weight" format="float" />
+        <attr name="chevronIcon" format="integer" />
+        <attr name="emptyText" format="string"/>
+    </declare-styleable>
 </resources>
