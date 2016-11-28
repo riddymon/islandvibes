@@ -24,6 +24,10 @@ public class UserInfo extends Model {
     @Column(name = "email")
     String email;
 
+    public UserInfo() {
+        super();
+    }
+
     public String getFirstName() {
         return firstName;
     }
@@ -50,8 +54,11 @@ public class UserInfo extends Model {
 
     public static List<UserInfo> getUser() {
         return new Select()
-                .all()
                 .from(UserInfo.class)
                 .execute();
+    }
+
+    public void delete(String email) {
+
     }
 }

@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/background_transparent_black_rounded">
+        <TextView
+            android:id="@+id/infoTitle"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="@string/info"
+            style="@style/ContentTitle"/>
+        <TextView
+            android:id="@+id/infoWarning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/info_warning"
+            android:layout_below="@id/infoTitle"
+            style="@style/ContentWarning" />
+        <com.islandvibesguelph.islandvibes.widgets.StyledEditText
+            android:id="@+id/infoName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/infoWarning"></com.islandvibesguelph.islandvibes.widgets.StyledEditText>
+        <com.islandvibesguelph.islandvibes.widgets.StyledEditText
+            android:id="@+id/infoEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/infoName"></com.islandvibesguelph.islandvibes.widgets.StyledEditText>
+
+    </RelativeLayout>
+
+</RelativeLayout>

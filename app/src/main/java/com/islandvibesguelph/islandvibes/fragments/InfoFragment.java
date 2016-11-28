@@ -1,0 +1,61 @@
+package com.islandvibesguelph.islandvibes.fragments;
+
+
+import android.os.Bundle;
+import android.app.Fragment;
+import android.util.Log;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.TextView;
+
+import com.islandvibesguelph.islandvibes.InfoActivity;
+import com.islandvibesguelph.islandvibes.R;
+
+/**
+ * A simple {@link Fragment} subclass.
+ */
+public class InfoFragment extends Fragment {
+
+
+    public InfoFragment() {
+        // Required empty public constructor
+    }
+
+    private TextView mIdentification;
+    private InfoActivity mInfoActivity;
+    private Button testButton;
+
+//    private View.OnClickListener mOnToEventsListener = new View.OnClickListener() {
+//
+//        @Override
+//        public void onClick(View v) {
+//            mInfoActivity.onClickEvents();
+//        }
+//
+//    };
+
+    @Override
+    public void onViewCreated(View view, Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        initializeUI(view);
+        Log.v("Info Fragment", " - initialized");
+//        populateData();
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        Log.v("Info Fragment", getActivity().toString());
+        return inflater.inflate(R.layout.fragment_info, container, false);
+        //initializeUI();
+    }
+
+    private void initializeUI(View v) {
+//        testButton = (Button) v.findViewById(R.id.btnToEvents);
+//        testButton.setOnClickListener(mOnToEventsListener);
+        mInfoActivity = (InfoActivity) getActivity();
+    }
+
+}
