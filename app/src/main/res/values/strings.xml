@@ -8,4 +8,6 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_home">Home</string>
     <string name="unruly_app">Island Vibes Mobile - The Most Unruly App</string>
+    <string name="info">INFO</string>
+    <string name="info_warning">Please ensure that you provide your real name (as shown on ID) and a valid address as this information may be used for special access to Island Vibes events as well as important communications.</string>
 </resources>
