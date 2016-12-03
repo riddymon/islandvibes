@@ -6,6 +6,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text=""
+        android:textColor="@color/white"
         android:layout_weight="0.25"
         android:textSize="15sp"
         android:textStyle="bold" >
@@ -14,14 +15,14 @@
     <EditText
         android:id="@+id/value"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="25dp"
         android:layout_weight="0.75"
         android:textSize="15sp"
         android:textStyle="bold"
 	    android:singleLine="true"
 	    android:lines="1"
 	    android:maxLines="1"
-        android:background="@null"
+        android:background="@color/white"
         android:textCursorDrawable="@drawable/cursor_black" >
      </EditText>
 

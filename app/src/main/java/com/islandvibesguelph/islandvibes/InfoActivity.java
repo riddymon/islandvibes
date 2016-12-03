@@ -38,7 +38,11 @@ public class InfoActivity extends FragmentActivity {
     private void showInfoFragment() {
         mFragmentManager
                 .beginTransaction()
-                .replace(R.id.layoutHome, mInfoFragment, INFO_TAG)
+                .replace(R.id.layoutInfo, mInfoFragment, INFO_TAG)
                 .commit();
+    }
+
+    public void goToNextScreen() {
+
     }
 }

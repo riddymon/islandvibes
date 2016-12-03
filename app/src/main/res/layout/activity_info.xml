@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:custom="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/layoutHome"
+    android:id="@+id/layoutInfo"
     android:background="@color/ivneon"
     android:fitsSystemWindows="true"
     tools:context="com.islandvibesguelph.islandvibes.InfoActivity">

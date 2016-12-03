@@ -22,4 +22,7 @@
         <attr name="chevronIcon" format="integer" />
         <attr name="emptyText" format="string"/>
     </declare-styleable>
+    <declare-styleable name="StyledEditText">
+        <attr name="txtLabel" format="string"/>
+    </declare-styleable>
 </resources>

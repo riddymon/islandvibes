@@ -80,8 +80,8 @@ public class StyledEditText extends LinearLayout{
         mTxtValue.addTextChangedListener(watcher);
     }
 
-
     public void setValidationListener(OnFocusChangeListener listener) {
+        mTxtValue.setFocusable(true);
         mTxtValue.setOnFocusChangeListener(listener);
     }
 

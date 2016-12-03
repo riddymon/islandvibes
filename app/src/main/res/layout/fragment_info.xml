@@ -4,19 +4,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <RelativeLayout
+    <RelativeLayout xmlns:custom="http://schemas.android.com/apk/res-auto"
         android:layout_centerInParent="true"
         android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
+        android:layout_margin="10dp"
         android:background="@drawable/background_transparent_black_rounded">
         <TextView
             android:id="@+id/infoTitle"
             android:gravity="center"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingTop="10dp"
+            android:paddingTop="5dp"
             android:text="@string/info"
             style="@style/ContentTitle"/>
         <TextView
@@ -31,12 +31,32 @@
             android:id="@+id/infoName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/infoWarning"></com.islandvibesguelph.islandvibes.widgets.StyledEditText>
+            android:padding="10dp"
+            android:layout_below="@id/infoWarning"
+            custom:label="@string/txtFName"></com.islandvibesguelph.islandvibes.widgets.StyledEditText>
+        <com.islandvibesguelph.islandvibes.widgets.StyledEditText
+            android:id="@+id/infoLName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:layout_below="@id/infoName"
+            custom:label="@string/txtLName"></com.islandvibesguelph.islandvibes.widgets.StyledEditText>
         <com.islandvibesguelph.islandvibes.widgets.StyledEditText
             android:id="@+id/infoEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/infoName"></com.islandvibesguelph.islandvibes.widgets.StyledEditText>
+            android:paddingBottom="10dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:layout_below="@id/infoLName"
+            custom:label="@string/txtEmail"></com.islandvibesguelph.islandvibes.widgets.StyledEditText>
+        <Button
+            android:id="@+id/btnInfoSave"
+            style="@style/Button"
+            android:text="Save Info"
+            android:layout_below="@id/infoEmail" />
 
     </RelativeLayout>
 

@@ -10,4 +10,6 @@
     <color name="white">#FFFFFF</color>
     <color name="ivneon">#D2FF4D</color>
     <color name="ivtitle">#FF017E</color>
+    <color name="ivgreen">#00b200</color>
+    <color name="green_button_pressed">#6646A147</color>
 </resources>

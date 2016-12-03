@@ -9,5 +9,9 @@
     <string name="title_activity_home">Home</string>
     <string name="unruly_app">Island Vibes Mobile - The Most Unruly App</string>
     <string name="info">INFO</string>
-    <string name="info_warning">Please ensure that you provide your real name (as shown on ID) and a valid address as this information may be used for special access to Island Vibes events as well as important communications.</string>
+    <string name="info_warning">Please ensure that you provide your real name (as shown on ID) and a valid email address as this information may be used for special access and/or discounts to Island Vibes events as well as important communications.</string>
+    <string name="txtFullName">Full Name:</string>
+    <string name="txtEmail">E-mail:</string>
+    <string name="txtLName">Last Name:</string>
+    <string name="txtFName">First Name:</string>
 </resources>
