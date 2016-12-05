@@ -9,10 +9,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.TextView;
 
 import com.islandvibesguelph.islandvibes.InfoActivity;
 import com.islandvibesguelph.islandvibes.R;
+import com.islandvibesguelph.islandvibes.models.UserInfo;
 import com.islandvibesguelph.islandvibes.utilities.ValidationUtility;
 import com.islandvibesguelph.islandvibes.widgets.StyledEditText;
 
@@ -33,6 +33,7 @@ public class InfoFragment extends Fragment{
     private Button submitButton;
     private FragmentManager mFragmentManager;
     private InfoFragment mInfoFragment;
+    private InfoConfirmFragment mInfoConfirmFragment;
     private static final String INFO_TAG = "info_confirmation";
 
     private View.OnClickListener mOnToEventsListener = new View.OnClickListener() {
@@ -40,18 +41,17 @@ public class InfoFragment extends Fragment{
         @Override
         public void onClick(View v) {
             if(validateInfo()) {
-                //goToConfirmation();
+                UserInfo appOwner = new UserInfo();
+                appOwner.setFirstName(mName.getValue());
+                appOwner.setLastName(mLName.getValue());
+                appOwner.setEmail(mEmail.getValue());
+                System.out.println(appOwner.getFirstName() + " " + appOwner.getLastName());
+                appOwner.save();
+                mInfoActivity.onClickSaveInfo();
             }
         }
 
     };
-
-//    private void goToConfirmation() {
-//        mFragmentManager
-//                .beginTransaction()
-//                .replace(R.id.info, mInfoConfirmFragment, INFO_TAG)
-//                .commit();
-//    }
 
     private boolean validateInfo() {
         boolean validated = true;
@@ -80,6 +80,7 @@ public class InfoFragment extends Fragment{
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        mFragmentManager = getFragmentManager();
         initializeUI(view);
         Log.v("Info Fragment", " - initialized");
 //        populateData();
@@ -100,5 +101,6 @@ public class InfoFragment extends Fragment{
         mLName = (StyledEditText)v.findViewById(R.id.infoLName);
         mEmail = (StyledEditText)v.findViewById(R.id.infoEmail);
     }
+
 
 }

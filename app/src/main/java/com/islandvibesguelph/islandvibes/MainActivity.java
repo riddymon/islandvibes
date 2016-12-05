@@ -60,13 +60,17 @@ public class MainActivity extends Activity {
         showHomeView();
     }
 
+//    @Override
+//    public void onBackPressed() {
+//        if (getFragmentManager().getBackStackEntryCount() == 0) {
+//            this.finish();
+//        } else {
+//            getFragmentManager().popBackStack();
+//        }
+//    }
+
     @Override
     public void onBackPressed() {
-        if (getFragmentManager().getBackStackEntryCount() == 0) {
-            this.finish();
-        } else {
-            getFragmentManager().popBackStack();
-        }
     }
 
     private void showHomeView() {

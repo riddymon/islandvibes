@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:custom="http://schemas.android.com/apk/res-auto"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/background_transparent_black_rounded">
+        <TextView
+            android:id="@+id/infoConfirmationTitle"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:text=""
+            style="@style/ContentTitle"/>
+        <TextView
+            android:id="@+id/infoConfirmation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/infoConfirmationTitle"
+            android:padding="10dp"
+            android:text="@string/mostUnruly"
+            style="@style/ContentConfirmation" />
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/infoConfirmation"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:indeterminate="true"
+            android:id="@+id/progressBar2" />
+    </RelativeLayout>
+</RelativeLayout>

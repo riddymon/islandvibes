@@ -44,11 +44,6 @@ public class SplashActivity extends Activity {
     }
 
     private void getStartupData() {
-//        UserInfo redir = new UserInfo();
-//        redir.setFirstName("First");
-//        redir.setLastName("Initialization");
-//        redir.setEmail("islandvibes@initialize.com");
-//        redir.save();
         if (isFirstRun()) {
             goToUserInfo();
         } else {
@@ -61,14 +56,13 @@ public class SplashActivity extends Activity {
         boolean firstRun;
         ArrayList<UserInfo> savedUsers = (ArrayList<UserInfo>)UserInfo.getUser();
 
-        if(savedUsers == null || savedUsers.isEmpty() || savedUsers.size() == 1){
+        if(savedUsers == null || savedUsers.isEmpty()){
             firstRun = true;
         }
         else {
 
             firstRun = false;
         }
-//        UserInfo lastUser = aaTest.get(aaTest.size()-1);
         return firstRun;
     }
 

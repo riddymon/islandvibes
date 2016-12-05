@@ -54,9 +54,17 @@
         <item name="android:textStyle">bold</item>
         <item name="android:fontFamily">sans-serif-medium</item>
     </style>
+    <style name="ConfirmationTitle" parent="ContentTitle">
+        <item name="android:textSize">15sp</item>
+    </style>
     <style name="ContentWarning">
         <item name="android:textSize">15sp</item>
         <item name="android:textColor">@color/yellow</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+    <style name="ContentConfirmation">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/white</item>
         <item name="android:fontFamily">sans-serif-medium</item>
     </style>
     <style name="Header">

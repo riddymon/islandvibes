@@ -48,7 +48,7 @@ public class StyledEditText extends LinearLayout{
         mTxtValue = (EditText) findViewById(R.id.value);
         mTxtValue.setInputType(inputType);
         mErrIcon = context.getResources().getDrawable(R.drawable.icon_error);
-        mErrIcon.setBounds(0, 0, mErrIcon.getIntrinsicWidth(), mErrIcon.getIntrinsicHeight());
+        mErrIcon.setBounds(0, 0, 75, 75);
     }
 
     public String getValue() {
