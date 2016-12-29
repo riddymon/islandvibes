@@ -54,8 +54,8 @@ public class HomeFragment extends Fragment {
     }
 
     private void initializeUI(View v) {
-        testButton = (Button) v.findViewById(R.id.btnToEvents);
-        testButton.setOnClickListener(mOnToEventsListener);
+//        testButton = (Button) v.findViewById(R.id.btnToEvents);
+//        testButton.setOnClickListener(mOnToEventsListener);
         mHomeActivity = (MainActivity) getActivity();
     }
 

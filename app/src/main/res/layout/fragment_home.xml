@@ -3,30 +3,87 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <LinearLayout
+    <RelativeLayout xmlns:custom="http://schemas.android.com/apk/res-auto"
+        android:layout_centerInParent="true"
+        android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/background_transparent_black_rounded"
-        android:layout_centerInParent="true"
-        android:layout_marginEnd="30dp"
-        android:layout_marginStart="30dp"
-        android:gravity="center"
-        android:orientation="vertical"
-        android:paddingBottom="25dp"
-        android:paddingEnd="15dp"
-        android:paddingStart="15dp"
-        android:paddingTop="25dp">
+        android:layout_margin="20dp"
+        android:background="@drawable/background_transparent_black_rounded">
 
         <TextView
+            android:id="@+id/infoTitle"
+            android:gravity="center"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Home"/>
-
+            android:paddingTop="5dp"
+            android:text="@string/your_unruly_menu"
+            style="@style/ContentTitle"/>
         <Button
-            android:id="@+id/btnToEvents"
+            android:id="@+id/btnUpcoming"
+            style="@style/SettingsButton"
+            android:layout_below="@id/infoTitle"
+            android:text="@string/upcoming_events" />
+        <View
+            android:id="@+id/divider_1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:layout_below="@id/btnUpcoming"
+            android:background="@drawable/list_divider"/>
+        <Button
+            android:id="@+id/btnYourDJs"
+            style="@style/SettingsButton"
+            android:layout_below="@id/divider_1"
+            android:text="@string/djs" />
+        <View
+            android:id="@+id/divider_2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:layout_below="@id/btnYourDJs"
+            android:background="@drawable/list_divider"/>
+        <Button
+            android:id="@+id/btnTopPicks"
+            style="@style/SettingsButton"
+            android:layout_below="@id/divider_2"
+            android:text="@string/our_top_picks" />
+        <View
+            android:id="@+id/divider_3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:layout_below="@id/btnTopPicks"
+            android:background="@drawable/list_divider"/>
+        <Button
+            android:id="@+id/btnMix"
+            style="@style/SettingsButton"
+            android:layout_below="@id/divider_3"
+            android:text="@string/latest_mix" />
+        <View
+            android:id="@+id/divider_4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:layout_below="@id/btnMix"
+            android:background="@drawable/list_divider"/>
+        <Button
+            android:id="@+id/btnAbout"
+            style="@style/SettingsButton"
+            android:layout_below="@id/divider_4"
+            android:text="@string/about_island_vibes" />
+        <TextView
+            android:id="@+id/txtMoreInfo"
+            android:gravity="center"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Click To Flip"/>
-
-    </LinearLayout>
+            android:paddingTop="5dp"
+            android:layout_below="@id/btnAbout"
+            android:text="FOR MUCH MORE CHECK OUT:"
+            style="@style/InfoText"/>
+    </RelativeLayout>
 </RelativeLayout>

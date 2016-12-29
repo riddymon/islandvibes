@@ -15,4 +15,10 @@
     <string name="txtLName">Last Name:</string>
     <string name="txtFName">First Name:</string>
     <string name="mostUnruly">Now go on and enjoy Android\'s most UNRULY app!!</string>
+    <string name="upcoming_events">UPCOMING EVENTS</string>
+    <string name="your_unruly_menu">YOUR UNRULY MENU</string>
+    <string name="djs">Island Vibes DJs</string>
+    <string name="our_top_picks">OUR TOP PICKS</string>
+    <string name="latest_mix">LATEST MIX</string>
+    <string name="about_island_vibes">ABOUT ISLAND VIBES</string>
 </resources>
